@@ -1,4 +1,4 @@
-# HDCatalyzer-proxy
+# HDCatalyzer-Proxy
 
 This is the repository of the backend. The frontend code can be found in the [HDCatalyzer](https://github.com/IMISE/HDCatalyzer/) repository.
 
