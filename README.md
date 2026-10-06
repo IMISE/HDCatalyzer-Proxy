@@ -7,7 +7,7 @@ This is the repository of the backend. The frontend code can be found in the [HD
 1. Clone the repository
    
 ```sh
-git clone https://github.com/mstelbrink/dda-proxy.git
+git clone https://github.com/IMISE/HDCatalyzer-Proxy.git
 ```
 
 2. Set environment variables
