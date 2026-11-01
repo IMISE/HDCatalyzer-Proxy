@@ -11,9 +11,20 @@ services:
     restart: unless-stopped
     depends_on: 
       - mongodb
+      - ollama
   mongodb:
-    image: mongodb/mongodb-community-server:latest
+    image: mongodb/mongodb-community-server:7.0-ubi8-slim
     container_name: mongodb
     ports:
       - "27017:27017"
     restart: unless-stopped
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+
+volumes:
+  ollama:
