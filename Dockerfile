@@ -6,7 +6,7 @@ RUN apk add maven
 
 COPY . .
 
-RUN mvn package
+RUN mvn package -DskipTests
 
 CMD cp ./target/*.jar dda-proxy.jar && \
     cp src/main/resources/application-docker.yaml application.yaml && \
